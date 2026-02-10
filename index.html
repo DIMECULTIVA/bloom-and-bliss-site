@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noni's Bloom & Bliss Spa | Luxury Wellness in Kagiso</title>
+    <title>Noni's Bloom & Bliss Spa | Luxury Wellness Kagiso</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -34,10 +34,10 @@
         .cta-btn { background: var(--blush); color: white; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: 0.3s; }
         .cta-btn:hover { background: var(--slate); transform: translateY(-2px); }
 
-        /* Hero Section */
+        /* Hero Section with Stock Background */
         .hero {
-            height: 90vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1544161515-436ceaf54a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+            height: 95vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600334129128-f85239d2f3d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -47,35 +47,41 @@
             color: white;
             padding: 0 20px;
         }
-        .hero-content h1 { font-size: clamp(3rem, 8vw, 5rem); margin-bottom: 10px; }
+        .hero-content h1 { font-size: clamp(3.5rem, 8vw, 6rem); margin-bottom: 10px; }
         .hero-content p { font-size: 1.2rem; font-style: italic; letter-spacing: 4px; text-transform: uppercase; }
 
-        /* About Section with Image */
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 100px 8%; gap: 50px; }
-        .about-text h2 { font-size: 2.5rem; color: var(--slate); margin-bottom: 20px; }
-        .about-img img { width: 100%; border-radius: 15px; box-shadow: 20px 20px 0px var(--blush); }
+        /* About Section */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 100px 8%; gap: 60px; }
+        .about-text h2 { font-size: 2.8rem; color: var(--slate); margin-bottom: 20px; }
+        .about-img img { width: 100%; border-radius: 15px; box-shadow: 20px 20px 0px var(--blush); object-fit: cover; height: 500px; }
 
         /* Treatment Menu */
         .menu-section { padding: 100px 8%; background: var(--bg-light); }
         .section-title { text-align: center; margin-bottom: 60px; }
         .section-title h2 { font-size: 2.8rem; color: var(--slate); }
         
-        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 60px; }
-        .category { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); }
-        .category h3 { border-bottom: 2px solid var(--blush); padding-bottom: 15px; margin-bottom: 25px; color: var(--slate); font-size: 1.8rem; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+        .category { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .category h3 { border-bottom: 2.5px solid var(--blush); padding-bottom: 15px; margin-bottom: 25px; color: var(--slate); font-size: 2rem; }
         
-        .menu-item { display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px dashed #eee; padding-bottom: 8px; transition: 0.2s; }
-        .menu-item:hover { color: var(--blush); }
-        .item-name { font-weight: 400; }
-        .item-price { color: var(--slate); font-weight: bold; }
+        .menu-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px dashed #eee; padding-bottom: 12px; text-decoration: none; color: inherit; transition: 0.3s; }
+        .menu-item:hover { color: var(--blush); border-bottom: 1px solid var(--blush); }
+        .item-info { display: flex; flex-direction: column; }
+        .item-name { font-weight: 500; font-size: 1.1rem; }
+        .item-price { color: var(--slate); font-weight: bold; font-size: 1.1rem; }
+        .book-tag { font-size: 0.7rem; color: var(--blush); text-transform: uppercase; font-weight: bold; letter-spacing: 1px; margin-top: 4px; }
 
-        /* Footer & Contact */
+        /* Map Section */
+        .map-container { width: 100%; height: 400px; background: #eee; }
+        iframe { width: 100%; height: 100%; border: none; filter: grayscale(100%) contrast(1.2) opacity(0.8); }
+
+        /* Footer */
         footer { background: var(--dark-gray); color: white; padding: 80px 8% 40px; text-align: center; }
-        .footer-logo { font-size: 2rem; font-family: 'Playfair Display', serif; margin-bottom: 20px; display: block; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 50px; }
-        .footer-item h4 { color: var(--blush); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
-        .footer-item p, .footer-item a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; }
-        .copy { font-size: 0.8rem; border-top: 1px solid #444; padding-top: 30px; opacity: 0.5; }
+        .footer-logo { font-size: 2.5rem; font-family: 'Playfair Display', serif; margin-bottom: 30px; display: block; color: var(--blush); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 50px; }
+        .footer-item h4 { color: var(--blush); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 2px; }
+        .footer-item p, .footer-item a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; font-size: 0.9rem; }
+        .copy { font-size: 0.8rem; border-top: 1px solid #444; padding-top: 30px; opacity: 0.5; margin-top: 50px; }
 
         @media (max-width: 768px) {
             .about-grid { grid-template-columns: 1fr; text-align: center; }
@@ -87,69 +93,101 @@
 
     <nav>
         <div class="logo">NONI'S SPA</div>
-        <a href="tel:0643019023" class="cta-btn">Book Bliss</a>
+        <a href="https://wa.me/27643019023?text=Hello%20Noni's%20Bloom%20%26%20Bliss%20Spa,%20I%20would%20like%20to%20make%20a%20booking." class="cta-btn" target="_blank">Book Bliss</a>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
             <h1>Bloom & Bliss</h1>
-            <p>Sanctuary of Serenity</p>
+            <p>Your sanctuary in Kagiso</p>
         </div>
     </header>
 
     <section class="about-grid">
         <div class="about-img">
-            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Relaxation">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Relaxation at Noni's">
         </div>
         <div class="about-text">
-            <h2>Experience True Tranquility</h2>
-            <p>Located in the heart of Kagiso, Noni’s Bloom & Bliss Spa is dedicated to providing high-end wellness treatments that rejuvenate the soul. From aromatic escapes to precision nail care, every detail is crafted for your comfort.</p>
+            <h2>Experience Pure Bliss</h2>
+            <p>Welcome to <strong>Noni’s Bloom & Bliss Spa</strong>. We believe in the power of touch and the importance of self-care. Nestled in the heart of Kagiso, our spa offers a serene escape from the everyday hustle.</p>
+            <p>Step into a world of tranquility where every massage and treatment is designed to leave you feeling refreshed and renewed.</p>
         </div>
     </section>
 
     <section id="menu" class="menu-section">
         <div class="section-title">
-            <h2>Treatment Menu</h2>
+            <h2>Our Spa Menu</h2>
+            <p style="font-style: italic;">Select a treatment to book via WhatsApp</p>
         </div>
 
         <div class="menu-grid">
             <div class="category">
                 <h3>Massages</h3>
-                <div class="menu-item"><span class="item-name">Swedish Massage (60min)</span><span class="item-price">R250</span></div>
-                <div class="menu-item"><span class="item-name">Aromatherapy (60min)</span><span class="item-price">R280</span></div>
-                <div class="menu-item"><span class="item-name">Deep Tissue (60min)</span><span class="item-price">R350</span></div>
-                <div class="menu-item"><span class="item-name">Hot Stones (60min)</span><span class="item-price">R300</span></div>
-                <div class="menu-item"><span class="item-name">Back, Neck & Shoulders (60min)</span><span class="item-price">R200</span></div>
-                <div class="menu-item"><span class="item-name">Back, Neck & Shoulders (30min)</span><span class="item-price">R120</span></div>
-                <div class="menu-item"><span class="item-name">Add-On: Back Scrub</span><span class="item-price">R50</span></div>
+                <a href="https://wa.me/27643019023?text=I'd%20like%20to%20book%20a%2060min%20Swedish%20Massage" target="_blank" class="menu-item">
+                    <div class="item-info"><span class="item-name">Swedish Massage (60min)</span><span class="book-tag">Click to Book</span></div>
+                    <span class="item-price">R250</span>
+                </a>
+                <a href="https://wa.me/27643019023?text=I'd%20like%20to%20book%20an%20Aromatherapy%20Massage" target="_blank" class="menu-item">
+                    <div class="item-info"><span class="item-name">Aromatherapy (60min)</span><span class="book-tag">Click to Book</span></div>
+                    <span class="item-price">R280</span>
+                </a>
+                <a href="https://wa.me/27643019023?text=I'd%20like%20to%20book%20a%20Deep%20Tissue%20Massage" target="_blank" class="menu-item">
+                    <div class="item-info"><span class="item-name">Deep Tissue (60min)</span><span class="book-tag">Click to Book</span></div>
+                    <span class="item-price">R350</span>
+                </a>
+                <a href="https://wa.me/27643019023?text=I'd%20like%20to%20book%20a%20Hot%20Stones%20Massage" target="_blank" class="menu-item">
+                    <div class="item-info"><span class="item-name">Hot Stones (60min)</span><span class="book-tag">Click to Book</span></div>
+                    <span class="item-price">R300</span>
+                </a>
+                <a href="https://wa.me/27643019023?text=I'd%20like%20to%20book%20a%2060min%20Back%2C%20Neck%20%26%20Shoulders" target="_blank" class="menu-item">
+                    <div class="item-info"><span class="item-name">Back, Neck & Shoulders (60min)</span><span class="book-tag">Click to Book</span></div>
+                    <span class="item-price">R200</span>
+                </a>
             </div>
 
             <div class="category">
-                <h3>Nail Artistry</h3>
-                <div class="menu-item"><span class="item-name">Gel Hands</span><span class="item-price">R130</span></div>
-                <div class="menu-item"><span class="item-name">Gel Feet</span><span class="item-price">R100</span></div>
-                <div class="menu-item"><span class="item-name">Full Manicure + Gel</span><span class="item-price">R150</span></div>
-                <div class="menu-item"><span class="item-name">Full Pedicure + Gel</span><span class="item-price">R180</span></div>
-                <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Nails" style="width:100%; border-radius:10px; margin-top:20px;">
+                <h3>Nails & Add-ons</h3>
+                <a href="https://wa.me/27643019023?text=I'd%20like%20to%20book%20a%20Full%20Manicure%20with%20Gel" target="_blank" class="menu-item">
+                    <div class="item-info"><span class="item-name">Full Manicure + Gel</span><span class="book-tag">Click to Book</span></div>
+                    <span class="item-price">R150</span>
+                </a>
+                <a href="https://wa.me/27643019023?text=I'd%20like%20to%20book%20a%20Full%20Pedicure%20with%20Gel" target="_blank" class="menu-item">
+                    <div class="item-info"><span class="item-name">Full Pedicure + Gel</span><span class="book-tag">Click to Book</span></div>
+                    <span class="item-price">R180</span>
+                </a>
+                <a href="https://wa.me/27643019023?text=I'd%20like%20to%20add%20a%20Back%20Scrub%20to%20my%20session" target="_blank" class="menu-item">
+                    <div class="item-info"><span class="item-name">Add-On: Back Scrub</span><span class="book-tag">Click to Book</span></div>
+                    <span class="item-price">R50</span>
+                </a>
+                <img src="https://images.unsplash.com/photo-1632345033839-21c8f123c85a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Spa Treatment" style="width:100%; border-radius:10px; margin-top:20px; height: 180px; object-fit: cover;">
             </div>
         </div>
     </section>
 
+    <section class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.474661858569!2d27.778844!3d-26.11585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA2JzU3LjEiUyAyN8KwNDYnNDMuOCJF!5e0!3m2!1sen!2sza!4v1707567800000!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
     <footer>
-        <span class="footer-logo">Noni's Bloom & Bliss</span>
+        <span class="footer-logo">Noni's</span>
         <div class="footer-grid">
             <div class="footer-item">
-                <h4>Find Us</h4>
+                <h4>Visit Us</h4>
                 <p>5803 Moshoeshoe Drive</p>
                 <p>Kagiso, 1754</p>
             </div>
             <div class="footer-item">
-                <h4>Connect</h4>
+                <h4>Contact</h4>
                 <a href="tel:0643019023">064 301 9023</a>
+                <a href="https://wa.me/27643019023">WhatsApp Us Directly</a>
+            </div>
+            <div class="footer-item">
+                <h4>Hours</h4>
                 <p>Mon - Sat: 09:00 - 18:00</p>
+                <p>Sundays: By Appointment</p>
             </div>
         </div>
-        <p class="copy">&copy; 2026 Crafted for Noni's Bloom & Bliss Spa. All Rights Reserved.</p>
+        <p class="copy">&copy; 2026 Noni's Bloom & Bliss Spa. Built by Keorapetse.</p>
     </footer>
 
 </body>
